@@ -26,8 +26,9 @@ public class Webtables_2_learning {
 
       Thread.sleep(5000);
 
-      WebElement terminated_employee = driver.findElement(By.xpath("//div[@class=\"orangehrm-container\"]/div/div[@class=\"oxd-table-body\"]/div[3]/div/div[6]"));
-      terminated_employee.getText();
+      String terminated_employee = driver.findElement(By.xpath("//div[@class=\"orangehrm-container\"]/div/div[@class=\"oxd-table-body\"]/div[3]/div/div[6]")).getText();
+      System.out.println(terminated_employee);
+
 
       WebElement delete_button = driver.findElement(By.xpath("//div[@class=\"orangehrm-container\"]/div/div[@class=\"oxd-table-body\"]/div[3]/div/div[9]/div/button[@type=\"button\"]"));
       delete_button.click();
