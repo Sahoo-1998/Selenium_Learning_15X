@@ -30,9 +30,10 @@ public class Assignment_window_handles_2 {
         for ( WebElement names:seach_test){
             System.out.println( names.getText());
             names.click();
+
         }
 
-        driver.quit();
+        driver.close();
 
 
 

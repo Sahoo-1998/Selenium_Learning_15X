@@ -36,7 +36,7 @@ public class Assignment_window_handles {
         for(WebElement names :list_of_elements){
 
             System.out.println(names.getText());
-            names.click();
+            names.click(); ;
         }
 
 //        for(String links_click : Windowhandles){
